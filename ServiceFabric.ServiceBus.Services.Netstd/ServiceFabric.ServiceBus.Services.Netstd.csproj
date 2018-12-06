@@ -13,7 +13,7 @@
     <PackageTags>ServiceFabric;Service;Fabric;ServiceBus;Bus;Reliable</PackageTags>
     <PackageProjectUrl>https://github.com/gdodd1977/ServiceFabric.ServiceBus</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/gdodd1977/ServiceFabric.ServiceBus/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/gdodd1977/ServiceFabric.ServiceBus/tree/NetstandardPackage</RepositoryUrl>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
@@ -22,11 +22,11 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
     <Platforms>x64</Platforms>
     <SignAssembly>false</SignAssembly>
-    <Version>1.0.0</Version>
+    <Version>1.0.0-AutoCompleteOff</Version>
   </PropertyGroup>
 
   <ItemGroup>
