@@ -77,7 +77,11 @@ namespace ServiceFabric.ServiceBus.Services.Netstd.CommunicationListeners
         /// </summary>
         protected override void ListenForMessages()
         {
-            var options = new MessageHandlerOptions(ExceptionReceivedHandler);
+            var options = new MessageHandlerOptions(ExceptionReceivedHandler)
+            {
+                AutoComplete = !Receiver.AutoComplete //If SBClient Autocomplete is set to true, it will complete the queue lock even if an error is thrown. This allows user to have more control over that process.
+            };
+
             if (AutoRenewTimeout.HasValue)
             {
                 options.MaxAutoRenewDuration = AutoRenewTimeout.Value;
